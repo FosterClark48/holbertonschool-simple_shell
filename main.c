@@ -7,7 +7,7 @@
  * Return: 1
  */
 
-int main(int argc, char **argv)
+int main(int ac __attribute__((unused)), char *av[])
 {
 	int ret_stat = EXIT_SUCCESS;
 	char *line = NULL;
