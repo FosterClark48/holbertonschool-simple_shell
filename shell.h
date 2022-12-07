@@ -11,7 +11,7 @@
 #include <signal.h>
 
 /*external environment variable*/
-extern char **envi;
+extern char **environ;
 
 /*Helper functions*/
 void prompt(void);
