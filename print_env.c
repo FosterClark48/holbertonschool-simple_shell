@@ -1,4 +1,5 @@
 #include "shell.h"
+extern char **environ;
 /**
 *print_env - prints the current environment
 *Return: status
@@ -7,12 +8,12 @@ int print_env(void)
 {
 	int j = 0, i = 0;
 
-	while (envi[i] != NULL)
+	while (environ[i] != NULL)
 	{
 		j = 0;
-		while (envi[i][j] != '\0')
+		while (environ[i][j] != '\0')
 		{
-			_putchar(envi[i][j]);
+			_putchar(environ[i][j]);
 			j++;
 		}
 		_putchar('\n');
