@@ -1,6 +1,5 @@
 #include "shell.h"
-
-
+extern char **environ;
 /**
  * child - creates child process
  * @array: array of strings passed to new prog
@@ -27,7 +26,7 @@ int child(char **array, char *av[], int cnt)
 
 	if (ch == 0)
 	{
-		valstat = execve(array[0], array, envi);
+		valstat = execve(array[0], array, environ);
 	}
 	else
 	{
