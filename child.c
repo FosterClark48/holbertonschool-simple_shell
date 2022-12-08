@@ -1,5 +1,5 @@
 #include "shell.h"
-extern char **environ;
+
 /**
  * child - creates child process
  * @array: array of strings passed to new prog
