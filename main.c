@@ -2,8 +2,8 @@
 
 /**
  * main - main function
- * @argc: arg count
- * @argv: arg vector
+ * @ac: arg count
+ * @av: arg vector
  * Return: 1
  */
 
