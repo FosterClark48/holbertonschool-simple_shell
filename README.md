@@ -4,18 +4,18 @@ This project we are tasked with creating our own shell. Output must be the same 
 The only difference is when you print an error, the name of the program must be equivelent to your `argv[0]`.
 # Error Exmple with `sh` 
 ```
-$ echo "qwerty" | /bin/sh
-/bin/sh: 1: qwerty: not found
-$ echo "qwerty" | /bin/../bin/sh
+$ echo "fugazi" | /bin/sh
+/bin/sh: 1: fugazi: not found
+$ echo "fugazi" | /bin/../bin/sh
 /bin/../bin/sh: 1: qwerty: not found
 $ 
 ```
  # Same error with `hsh` program
 ```
-$ echo "qwerty" | ./hsh
-./hsh: 1: qwerty: not found
-$ echo "qwerty" | ./././hsh
-./././hsh: 1: qwerty: not found
+$ echo "fugazi" | ./hsh
+./hsh: 1: fugazi: not found
+$ echo "fugazi" | ./././hsh
+./././hsh: 1: fugazi: not found
 $
 ```
 #  Allowed Functions and System Calls
